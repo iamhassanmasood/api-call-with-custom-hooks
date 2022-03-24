@@ -1,18 +1,18 @@
 import { useEffect, useState } from "react";
+import Axios from "../services/AxiosConfig";
 
 const useApi = (url) => {
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState(null);
 
   const fetchApi = () => {
-    fetch(url)
+    Axios.get(url)
       .then((response) => {
-        return response.json();
+        return response.data;
       })
-      .then((json) => {
-        console.log(json);
+      .then((data) => {
         setLoading(false);
-        setData(json);
+        setData(data);
       });
   };
 
