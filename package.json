@@ -1,7 +1,7 @@
 {
   "name": "react-custom-hooks",
   "version": "1.0.0",
-  "description": "it's just for practice and use of custom hooks in reactjs in order to call api's",
+  "description": "Practice",
   "main": "src/index.js",
   "scripts": {
     "dev": "webpack-dev-server",
